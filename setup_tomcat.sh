@@ -26,5 +26,6 @@ rm server.xml
 wget https://raw.githubusercontent.com/contactbeowolf/ds-tests/master/server.xml
 cd /opt/tomcat/apache-tomcat-9.0.19/bin/
 echo "alias brc='chmod a+x ~/.bashrc; source ~/.bashrc'" >> ~/.bashrc
+source ~/.bashrc
 brc
 ./startup.sh
