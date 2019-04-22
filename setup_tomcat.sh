@@ -25,7 +25,7 @@ wget https://raw.githubusercontent.com/contactbeowolf/ds-tests/master/tomcat-use
 cd /opt/tomcat/apache-tomcat-9.0.19/conf/
 rm server.xml
 wget https://raw.githubusercontent.com/contactbeowolf/ds-tests/master/server.xml
-cd /opt/tomcat/apache-tomcat-9.0.19/bin/
 source ~/.bashrc
+cd /opt/tomcat/apache-tomcat-9.0.19/bin/
 ./startup.sh
 
