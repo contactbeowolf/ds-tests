@@ -26,4 +26,12 @@ rm server.xml
 wget https://raw.githubusercontent.com/contactbeowolf/ds-tests/master/server.xml
 cd /opt/tomcat/apache-tomcat-9.0.19/bin/
 source ~/.bashrc
+if [[ -f ~/.profile ]]; then
+  . ~/.profile
+fi
+
+# If the shell is interactive and .bashrc exists, get the aliases and functions
+if [[ $- == *i* && -f ~/.bashrc ]]; then
+    . ~/.bashrc
+fi
 ./startup.sh
