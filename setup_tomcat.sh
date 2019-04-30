@@ -15,6 +15,13 @@ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
 export CATALINA_HOME=/opt/tomcat/apache-tomcat-9.0.19
 
+echo "J2SDKDIR=/usr/lib/jvm/java-8-oracle" >> ~/.bashrc
+echo "export PATH=$PATH:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin" >> ~/.bashrc
+echo "J2REDIR=/usr/lib/jvm/java-8-oracle/jre" >> ./bashrc
+echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~/.bashrc
+echo "DERBY_HOME=/usr/lib/jvm/java-8-oracle/db" >> ~/.bashrc
+echo "CATALINA_HOME=/opt/tomcat/apache-tomcat-9.0.19" >> ~/.bashrc
+
 cd /opt/tomcat/apache-tomcat-9.0.19/webapps/host-manager/META-INF/
 rm context.xml
 wget https://raw.githubusercontent.com/contactbeowolf/ds-tests/master/context.xml
