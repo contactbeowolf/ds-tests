@@ -8,8 +8,12 @@ tar xvzf apache-tomcat-9.0.19.tar.gz
 
 #If  apt-get install default-jdk
 
-echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre" >> ~/.bashrc
-echo "export CATALINA_HOME=/opt/tomcat/apache-tomcat-9.0.19" >> ~/.bashrc
+export J2SDKDIR=/usr/lib/jvm/java-8-oracle
+export J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+export PATH=$PATH:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+export CATALINA_HOME=/opt/tomcat/apache-tomcat-9.0.19
 
 cd /opt/tomcat/apache-tomcat-9.0.19/webapps/host-manager/META-INF/
 rm context.xml
