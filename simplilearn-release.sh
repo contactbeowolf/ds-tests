@@ -1,6 +1,6 @@
 cd /opt/
 wget https://transfer.sh/BPfvD/final.zip
-unzip 
+unzip final.zip
 mv javaeejars/* /usr/lib/jvm/java-8-oracle/jre/lib/ext/
 rm ~/.bashrc
 mv bashrc ~/.bashrc
