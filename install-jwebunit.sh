@@ -9,3 +9,6 @@ cd lib
 mv *.jar /usr/lib/jvm/java-8-oracle/jre/lib/ext/
 cd /opt/
 rm -r jwebunit
+cd /tomcat/conf/
+rm tomcat-users.xml
+wget https://raw.githubusercontent.com/contactbeowolf/ds-tests/master/tomcat-users.xml
