@@ -1,6 +1,6 @@
+wget -O - https://github.com/contactbeowolf/ds-tests/raw/master/simplilearn-release.sh | bash
 source ~/.bashrc
 set_javaee
-wget -O - https://github.com/contactbeowolf/ds-tests/raw/master/simplilearn-release.sh | bash
 cd /opt/
 mkdir jwebunit
 cd jwebunit
