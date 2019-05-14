@@ -1,4 +1,4 @@
-wget -O - https://github.com/contactbeowolf/ds-tests/raw/master/simplilearn-release.sh | bash && source ~/.bashrc
+wget -O - https://github.com/contactbeowolf/ds-tests/raw/master/servlet_setup.sh | bash && source ~/.bashrc
 cd /opt/
 mkdir jwebunit
 cd jwebunit
